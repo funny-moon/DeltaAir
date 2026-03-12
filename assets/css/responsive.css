@@ -1,0 +1,29 @@
+@media (max-width: 1300px) {
+  .container {
+    width: 96%;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header_inner {
+    justify-content: center;
+  }
+  .nav .gnb li {
+    padding: 0 18px;
+  }
+}
+@media (max-width: 960px) {
+  .logo {
+    margin-right: 0;
+  }
+  .nav {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+}
+@media (max-width: 480px) {
+}
