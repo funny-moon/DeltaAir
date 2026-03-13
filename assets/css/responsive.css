@@ -95,6 +95,12 @@
   i.fa-car {
     font-size: 30px;
   }
+
+  .hero .swiper-button-next,
+  .hero .swiper-button-prev,
+  .hero .swiper-pagination-bullet {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .banner_txt p {

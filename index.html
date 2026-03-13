@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/font.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/deltaStyle.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/mySwiper.css" />
     <title>Delta Air</title>
   </head>
   <body>
@@ -113,11 +115,36 @@
 
     <div id="banner_bg">
       <div id="banner">
-        <img src="assets/img/onboard-safety-infographic2-1600.jpg" alt="" />
-        <div class="banner_txt">
-          <h1>새로운 서비스<br />기준을 마련하였습니다.</h1>
-          <p>여행 여정의 모든 단계에서 Delta Care Standard 서비스를 누릴 수 있습니다.</p>
-          <div class="more">방법 알아보기</div>
+        <div class="swiper hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/onboard-safety-infographic2-1600.jpg" alt="" />
+              <div class="banner_txt">
+                <h1>새로운 서비스<br />기준을 마련하였습니다.</h1>
+                <p>여행 여정의 모든 단계에서 Delta Care Standard 서비스를 누릴 수 있습니다.</p>
+                <div class="more">방법 알아보기</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/wf-3682701-1600x624.webp" alt="" />
+              <div class="banner_txt">
+                <h1>새로운 서비스<br />기준을 마련하였습니다.</h1>
+                <p>여행 여정의 모든 단계에서 Delta Care Standard 서비스를 누릴 수 있습니다.</p>
+                <div class="more">방법 알아보기</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/hero-bg-03.jpg" alt="" />
+              <div class="banner_txt">
+                <h1>새로운 서비스<br />기준을 마련하였습니다.</h1>
+                <p>여행 여정의 모든 단계에서 Delta Care Standard 서비스를 누릴 수 있습니다.</p>
+                <div class="more">방법 알아보기</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <!-- //banner -->
@@ -158,5 +185,21 @@
 
     <footer id="footer"></footer>
     <!-- //footer -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".hero", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
