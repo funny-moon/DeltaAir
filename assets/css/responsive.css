@@ -2,6 +2,9 @@
   .container {
     width: 96%;
   }
+  .banner_txt {
+    top: 20%;
+  }
 }
 @media (max-width: 1100px) {
   .container {
@@ -14,6 +17,9 @@
   .nav .gnb li {
     padding: 0 18px;
   }
+  .banner_txt {
+    top: 17%;
+  }
 }
 @media (max-width: 960px) {
   .logo {
@@ -22,8 +28,82 @@
   .nav {
     display: none;
   }
+
+  .banner_txt {
+    top: 15%;
+  }
+  .banner_txt h1 {
+    font-size: 2.5em;
+  }
+  .banner_txt p {
+    font-size: 1.1em;
+  }
 }
 @media (max-width: 780px) {
+  .container {
+    padding: 0;
+  }
+  .banner_txt {
+    top: 10%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .banner_txt h1 {
+    font-size: 1.5em;
+  }
+  .banner_txt p {
+    width: 80%;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+  .banner_txt .more {
+    width: 130px;
+    height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .menu_inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .icon_menu li {
+    width: 50%;
+    margin-right: 0;
+    box-sizing: border-box;
+    padding: 22px 0;
+  }
+  .icon_menu li:first-child {
+    border-right: 1px solid #fff;
+  }
+  .fee {
+    border-top: 1px solid #fff;
+    text-align: center;
+  }
+  .fee li {
+    padding: 22px 0;
+  }
+
+  .icon_menu i.fa-angle-right {
+    display: none;
+  }
+  .icon_menu li a span {
+    display: block;
+  }
+  i.fa-bed,
+  i.fa-car {
+    font-size: 30px;
+  }
 }
 @media (max-width: 480px) {
+  .banner_txt p {
+    display: none;
+  }
+  .icon_menu li {
+    padding: 17px 0;
+  }
+  .fee li {
+    padding: 17px 0;
+  }
 }
