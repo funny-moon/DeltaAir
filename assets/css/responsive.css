@@ -38,6 +38,19 @@
   .banner_txt p {
     font-size: 1.1em;
   }
+  #main {
+    margin-top: 30px;
+  }
+  .small_title {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 1.2;
+    word-break: keep-all;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 780px) {
   .container {
@@ -96,10 +109,28 @@
     font-size: 30px;
   }
 
-  .hero .swiper-button-next,
-  .hero .swiper-button-prev,
-  .hero .swiper-pagination-bullet {
-    display: none;
+  #main {
+    margin-top: 20px;
+  }
+  .content01,
+  .content02 {
+    padding: 0 5%;
+    flex-direction: column;
+  }
+  .box_bg {
+    margin-bottom: 20px;
+  }
+  .content03 {
+    padding: 0 5%;
+  }
+  .bottomBox_bg {
+    flex-direction: column;
+  }
+  .bottomBox_img {
+    width: 100%;
+  }
+  .bottomBox_txt {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -111,5 +142,12 @@
   }
   .fee li {
     padding: 17px 0;
+  }
+  .small_title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .title {
+    font-size: 24px;
   }
 }
