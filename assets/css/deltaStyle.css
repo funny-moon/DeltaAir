@@ -4,6 +4,7 @@
   background: #001932;
 }
 #banner_bg {
+  width: 100%;
 }
 #main {
 }
@@ -23,6 +24,12 @@
 .logo {
   margin-right: 30px;
 }
+.logo svg g path {
+  transition: fill 0.3s;
+}
+.logo:hover svg g path {
+  fill: #ba0707;
+}
 .nav {
   flex: 1;
   display: flex;
@@ -38,13 +45,33 @@
 }
 .nav .gnb li a {
   display: block;
-  padding: 20px 0;
+  padding: 18px 0;
   font-size: 14px;
   font-weight: 800;
   color: #fff;
+  position: relative;
 }
-.nav .gnb li a:hover {
+.nav .gnb li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #ba0707;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
+.nav .gnb li a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+/* .nav .gnb li a:hover {
+  border-bottom: 3px solid #ba0707;
+  margin-bottom: -3px;
+} */
+
 .nav .lnb {
   display: flex;
 }
@@ -55,6 +82,9 @@
   font-size: 13px;
   padding: 10px;
 }
+.nav .lnb li a:hover {
+  color: #ba0707;
+}
 .nav .lnb li.login a {
   background-color: #ba0707;
   border-radius: 10px;
@@ -62,4 +92,21 @@
 }
 .nav .lnb li.login a:hover {
   background-color: #6d0202;
+  color: #fff;
+}
+
+/* banner */
+#banner {
+  width: 100%;
+}
+#banner img {
+  width: 100%;
+}
+.banner_txt {
+}
+.banner_txt h1 {
+}
+.banner_txt p {
+}
+.banner_txt .more {
 }
